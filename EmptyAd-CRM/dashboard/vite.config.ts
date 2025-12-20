@@ -1,0 +1,95 @@
+import path from 'node:path'
+import Vue from '@vitejs/plugin-vue'
+import Unocss from 'unocss/vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
+import VueMacros from 'unplugin-vue-macros/vite'
+import { VueRouterAutoImports } from 'unplugin-vue-router'
+import { defineConfig } from 'vite'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
+
+export default defineConfig({
+  server: {
+    port: 7000,
+    host: true,
+    hmr: {
+      host: 'localhost',
+    },
+  },
+  resolve: {
+    alias: {
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@/': `${path.resolve(__dirname, 'src')}/`,
+    },
+  },
+  build: {
+    chunkSizeWarningLimit: 1600,
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // api: 'modern-compiler', // removed as it is not supported in SassPreprocessorOptions
+      },
+    },
+  },
+
+  plugins: [
+    VueMacros({
+      plugins: {
+        vue: Vue({
+          include: [/\.vue$/],
+        }),
+      },
+    }),
+
+    Pages({
+      extensions: ['vue'],
+      importMode: 'async',
+    }),
+
+    Layouts({
+      layoutsDirs: 'src/layouts',
+      pagesDirs: 'src/pages',
+      defaultLayout: 'default',
+    }),
+
+    AutoImport({
+      imports: [
+        'vue',
+        'vue/macros',
+        '@vueuse/head',
+        '@vueuse/core',
+        VueRouterAutoImports,
+        {
+          'vue-router/auto': ['useLink'],
+        },
+        {
+          'naive-ui': [
+            'useDialog',
+            'useMessage',
+            'useNotification',
+            'useLoadingBar',
+            'usePopover',
+          ],
+        },
+      ],
+      dts: 'src/auto-imports.d.ts',
+      dirs: ['src/composables', 'src/store'],
+      vueTemplate: true,
+    }),
+
+    Components({
+      extensions: ['vue'],
+      resolvers: [NaiveUiResolver()],
+      include: [/\.vue$/, /\.vue\?vue/],
+      dts: 'src/components.d.ts',
+    }),
+
+    Unocss(),
+
+  ],
+
+  define: { 'process.env': {} },
+})
