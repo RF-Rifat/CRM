@@ -1,0 +1,45 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand: #7042d2;
+  --color-text-primary: #0d0c22;
+  --color-text-secondary: #3a3546;
+  --color-muted: #555555;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #0d0c22;
+  }
+
+  .dark {
+    --background: #1a1b1e;
+    --foreground: #dcdcdc;
+  }
+
+  body {
+    @apply font-body bg-[var(--background)] text-[var(--foreground)];
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .sticky-navbar {
+    @apply sticky top-0 z-50 bg-white/80 shadow-sm backdrop-blur-md dark:bg-black/80;
+  }
+}
