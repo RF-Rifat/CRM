@@ -1,0 +1,40 @@
+{
+  "recommendations": [
+    // Essential for TypeScript/JavaScript development
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    
+    // React/Next.js development
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-json",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense",
+    
+    // NestJS development
+    "ms-vscode.vscode-node-azure-pack",
+    "humao.rest-client",
+    
+    // Turborepo and monorepo tools
+    "ms-vscode.vscode-npm-script",
+    "christian-kohler.npm-intellisense",
+    
+    // Git and version control
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github",
+    
+    // General productivity
+    "ms-vscode.vscode-todo-highlight",
+    "streetsidesoftware.code-spell-checker",
+    "ms-vscode.vscode-markdown",
+    "yzhang.markdown-all-in-one",
+    
+    // Theme and UI (optional but recommended)
+    "pkief.material-icon-theme",
+    "github.github-vscode-theme"
+  ],
+  "unwantedRecommendations": [
+    "ms-vscode.vscode-typescript",
+    "hookyqr.beautify"
+  ]
+}
