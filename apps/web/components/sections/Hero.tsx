@@ -3,6 +3,7 @@ import { Typography } from '@/components/ui/Typography';
 import { Grid, Stack } from '@mantine/core';
 import { HeroFilters } from './HeroFilters';
 import { HeroMapPreview } from './HeroMapPreview';
+import { HeroSearch } from './HeroSearch';
 
 export const Hero = () => {
   return (
@@ -11,7 +12,9 @@ export const Hero = () => {
         <Grid gutter={80} align="center">
           <Grid.Col span={{ base: 12, md: 6 }}>
             <Stack gap="xl">
-              <HeroFilters />
+              <Stack gap="md">
+                <HeroFilters />
+              </Stack>
               <Stack gap="md">
                 <Typography
                   variant="h1"
@@ -27,9 +30,8 @@ export const Hero = () => {
                 >
                   advertise on the four doors of rideshare vehicles
                 </Typography>
+                <HeroSearch />
               </Stack>
-
-              
             </Stack>
           </Grid.Col>
 

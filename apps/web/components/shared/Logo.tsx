@@ -12,7 +12,7 @@ export const Logo = () => {
       <Typography
         variant="h3"
         color="brand"
-        className="tracking-tight uppercase"
+        className="tracking-tight uppercase font-semibold"
       >
         Empty
       </Typography>
