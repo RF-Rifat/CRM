@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
 import { AdvertisingSpaces } from '@/components/sections/AdvertisingSpaces/AdvertisingSpaces';
+import { FeaturedPicks } from '@/components/sections/FeaturedPicks/FeaturedPicks';
 import { Hero } from '@/components/sections/Hero/Hero';
 import { Stack } from '@mantine/core';
 
@@ -11,6 +12,7 @@ export default function LandingPage() {
         <Stack gap={0}>
           <Hero />
           <AdvertisingSpaces />
+          <FeaturedPicks />
         </Stack>
       </main>
 
