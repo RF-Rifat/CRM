@@ -26,7 +26,7 @@ export const NavLinks = () => {
             'hover:text-brand relative py-1 text-sm font-medium transition-all duration-200',
             router.pathname === link.href
               ? 'text-brand border-brand border-b-2'
-              : 'text-text-secondary dark:text-gray-400'
+              : 'text-text-secondary'
           )}
         >
           {link.label}

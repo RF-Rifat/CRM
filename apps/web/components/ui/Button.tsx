@@ -21,7 +21,7 @@ const _Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(
       <MantineButton
         ref={ref}
         className={cn(
-          'transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]',
+          'h-auto rounded-[12px] border-[1.5px] border-[#989898] px-[20px] py-[10px] shadow-[0_48px_100px_0_rgba(17,12,46,0.15)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]',
           className
         )}
         {...props}

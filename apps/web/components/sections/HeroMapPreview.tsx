@@ -10,10 +10,10 @@ import {
 
 export const HeroMapPreview = () => {
   return (
-    <div className="bg-brand/5 dark:bg-brand/10 relative aspect-square w-full overflow-hidden rounded-[40px] p-8 md:aspect-auto md:h-[600px]">
+    <div className="bg-brand/5 relative aspect-square w-full overflow-hidden rounded-[40px] p-8 md:aspect-auto md:h-[600px]">
       {/* Decorative Grid/Map Background Effect */}
       <div
-        className="absolute inset-0 opacity-20 dark:opacity-10"
+        className="absolute inset-0 opacity-20"
         style={{
           backgroundImage: 'radial-gradient(#7042D2 1px, transparent 1px)',
           backgroundSize: '24px 24px',
@@ -26,7 +26,7 @@ export const HeroMapPreview = () => {
           radius="lg"
           shadow="xl"
           p="md"
-          className="w-[340px] border-none backdrop-blur-xl dark:bg-gray-900/90"
+          className="w-[340px] border-none backdrop-blur-xl"
         >
           <Card.Section>
             <div className="relative p-2">
@@ -57,7 +57,7 @@ export const HeroMapPreview = () => {
               </Typography>
             </Group>
 
-            <hr className="my-1 border-gray-100 dark:border-gray-800" />
+            <hr className="my-1 border-gray-100" />
 
             <Group justify="space-between">
               <Typography

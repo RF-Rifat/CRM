@@ -16,7 +16,7 @@ interface TypographyProps {
 }
 
 const variantStyles = {
-  h1: 'text-4xl md:text-5xl lg:text-6xl font-heading leading-tight',
+  h1: 'text-4xl md:text-5xl lg:text-5xl font-heading leading-tight',
   h2: 'text-3xl md:text-4xl font-heading leading-snug',
   h3: 'text-2xl md:text-3xl font-heading leading-snug',
   body: 'text-base md:text-lg font-body leading-relaxed',
@@ -31,9 +31,9 @@ const weightStyles = {
 };
 
 const colorStyles = {
-  primary: 'text-text-primary dark:text-gray-100',
-  secondary: 'text-text-secondary dark:text-gray-400',
-  muted: 'text-muted dark:text-gray-500',
+  primary: 'text-text-primary',
+  secondary: 'text-text-secondary',
+  muted: 'text-muted',
   brand: 'text-brand',
 };
 
@@ -45,9 +45,9 @@ export const Typography: React.FC<TypographyProps> = ({
   className,
   id,
 }) => {
-  const Component = variant.startsWith('h')
-    ? (variant as keyof JSX.IntrinsicElements)
-    : 'p';
+  const Component = (
+    variant.startsWith('h') ? variant : 'p'
+  ) as React.ElementType;
 
   return (
     <Component

@@ -6,7 +6,7 @@ import { HeroMapPreview } from './HeroMapPreview';
 
 export const Hero = () => {
   return (
-    <section className="to-brand/5 dark:to-brand/10 overflow-hidden bg-gradient-to-br from-white pt-32 pb-20 md:pt-48 md:pb-32 dark:from-gray-900">
+    <section className="to-brand/5 overflow-hidden bg-gradient-to-br from-white pt-32 pb-20 md:pt-48 md:pb-32">
       <Container>
         <Grid gutter={80} align="center">
           <Grid.Col span={{ base: 12, md: 7 }}>
@@ -14,18 +14,19 @@ export const Hero = () => {
               <Stack gap="md">
                 <Typography
                   variant="h1"
-                  weight="bold"
+                 
                   color="primary"
                   className="tracking-tight"
                 >
-                  Advertise on <span className="text-brand">cool spaces</span>
+                  Advertise on cool spaces
                 </Typography>
                 <Typography
                   variant="body"
                   color="secondary"
                   className="max-w-lg text-xl"
                 >
-                  Explore unused spaces across the city — ready to be used for
+                  Explore unused spaces across the city — ready to be <br /> 
+                  used for
                   advertising.
                 </Typography>
               </Stack>

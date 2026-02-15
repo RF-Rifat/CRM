@@ -21,7 +21,7 @@ export const Container: React.FC<CustomContainerProps> = ({
   return (
     <MantineContainer
       className={cn('w-full transition-all duration-300', className)}
-      maxWith="xl" // Standardizing to xl per design system
+      size="xl" // Standardizing to xl per design system
       {...props}
     />
   );

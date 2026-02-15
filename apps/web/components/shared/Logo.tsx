@@ -10,7 +10,7 @@ export const Logo = () => {
       </div>
       <Typography
         variant="h3"
-        weight="bold"
+     
         color="brand"
         className="tracking-tight uppercase"
       >
