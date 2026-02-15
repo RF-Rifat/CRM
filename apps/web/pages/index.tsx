@@ -1,5 +1,6 @@
 import { Navbar } from '@/components/layout/Navbar';
-import { Hero } from '@/components/sections/Hero';
+import { AdvertisingSpaces } from '@/components/sections/AdvertisingSpaces/AdvertisingSpaces';
+import { Hero } from '@/components/sections/Hero/Hero';
 import { Stack } from '@mantine/core';
 
 export default function LandingPage() {
@@ -9,10 +10,7 @@ export default function LandingPage() {
       <main>
         <Stack gap={0}>
           <Hero />
-          {/* Add more sections here as they are implemented */}
-          <section className="border-t border-gray-100 bg-white py-20">
-            {/* AdvertisingSpaces section will go here */}
-          </section>
+          <AdvertisingSpaces />
         </Stack>
       </main>
 
