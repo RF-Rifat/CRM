@@ -8,8 +8,8 @@ function cn(...inputs: ClassValue[]) {
 }
 
 const links = [
-  { label: 'Catalogue', href: '/catalogue' },
-  { label: 'How We Do It', href: '/how-it-works' },
+  { label: 'How it works', href: '/how-it-works' },
+  { label: 'Our Tech', href: '/our-tech' },
   { label: 'For Agencies', href: '/agencies' },
 ];
 

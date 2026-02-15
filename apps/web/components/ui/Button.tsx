@@ -21,9 +21,16 @@ const _Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(
       <MantineButton
         ref={ref}
         className={cn(
-          'h-auto rounded-[12px] border-[1.5px] border-[#989898] px-[20px] py-[10px] shadow-[0_48px_100px_0_rgba(17,12,46,0.15)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]',
-          className
+          'h-auto border-t-2 border-r-2 border-b-0 border-l-2 border-gray-400 px-10 py-4 font-bold text-white transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98]'
         )}
+        style={{
+          background:
+            'linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%), var(--mantine-color-violet-6)',
+          boxShadow:
+            '0 20px 40px -10px rgba(124, 58, 237, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.1)',
+          ...props.style,
+          borderRadius: '12px',
+        }}
         {...props}
       />
     );

@@ -2,9 +2,11 @@ import { Logo } from '@/components/shared/Logo';
 import { NavLinks } from '@/components/shared/NavLinks';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
+import BagIcon from '@/src/assets/Bag.svg';
+import SearchIcon from '@/src/assets/Search.svg';
 import { ActionIcon, Group, Indicator } from '@mantine/core';
-import { IconSearch, IconShoppingCart } from '@tabler/icons-react';
 import { clsx } from 'clsx';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 export const Navbar = () => {
@@ -41,26 +43,21 @@ export const Navbar = () => {
               size="lg"
               className="rounded-full"
             >
-              <IconSearch size={20} />
+              <Image src={SearchIcon} alt="Search" width={24} height={24} />
             </ActionIcon>
 
-            <Indicator color="violet" size={8} offset={4}>
+          
               <ActionIcon
                 variant="subtle"
                 color="gray"
                 size="lg"
                 className="rounded-full"
               >
-                <IconShoppingCart size={20} />
+                <Image src={BagIcon} alt="Bag" width={24} height={24} />
               </ActionIcon>
-            </Indicator>
+           
 
-            <Button
-              variant="filled"
-              className="bg-violet-600 hover:bg-violet-700"
-            >
-              Login
-            </Button>
+            <Button>Login</Button>
           </Group>
         </div>
       </Container>

@@ -6,15 +6,15 @@ import { HeroMapPreview } from './HeroMapPreview';
 
 export const Hero = () => {
   return (
-    <section className="to-brand/5 overflow-hidden bg-gradient-to-br from-white pt-32 pb-20 md:pt-48 md:pb-32">
+    <section className="to-brand/5 overflow-hidden bg-white pt-30 pb-10">
       <Container>
         <Grid gutter={80} align="center">
-          <Grid.Col span={{ base: 12, md: 7 }}>
+          <Grid.Col span={{ base: 12, md: 6 }}>
             <Stack gap="xl">
+              <HeroFilters />
               <Stack gap="md">
                 <Typography
                   variant="h1"
-                 
                   color="primary"
                   className="tracking-tight"
                 >
@@ -25,17 +25,15 @@ export const Hero = () => {
                   color="secondary"
                   className="max-w-lg text-xl"
                 >
-                  Explore unused spaces across the city — ready to be <br /> 
-                  used for
-                  advertising.
+                  advertise on the four doors of rideshare vehicles
                 </Typography>
               </Stack>
 
-              <HeroFilters />
+              
             </Stack>
           </Grid.Col>
 
-          <Grid.Col span={{ base: 12, md: 5 }}>
+          <Grid.Col span={{ base: 12, md: 6 }}>
             <HeroMapPreview />
           </Grid.Col>
         </Grid>

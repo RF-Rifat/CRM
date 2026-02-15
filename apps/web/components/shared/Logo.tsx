@@ -1,16 +1,16 @@
 import { Typography } from '@/components/ui/Typography';
-import { IconDeviceLaptop } from '@tabler/icons-react';
+import logoIcon from '@/src/assets/logo.svg';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const Logo = () => {
   return (
     <Link href="/" className="group flex items-center gap-2 no-underline">
-      <div className="bg-brand flex h-10 w-10 items-center justify-center rounded-xl transition-transform group-hover:rotate-12">
-        <IconDeviceLaptop size={24} color="white" stroke={2.5} />
+      <div className="flex h-10 w-10 items-center justify-center transition-transform group-hover:scale-110">
+        <Image src={logoIcon} alt="Empty Logo" width={32} height={32} />
       </div>
       <Typography
         variant="h3"
-     
         color="brand"
         className="tracking-tight uppercase"
       >
