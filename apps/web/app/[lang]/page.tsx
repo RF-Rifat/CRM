@@ -3,6 +3,7 @@ import { AdvertisingSpaces } from '@/components/sections/AdvertisingSpaces/Adver
 import { FeaturedPicks } from '@/components/sections/FeaturedPicks/FeaturedPicks';
 import { Hero } from '@/components/sections/Hero/Hero';
 import { Stack } from '@mantine/core';
+import { NearyouPage } from '../../components/sections/NearyouPage/NearyouPage';
 
 export default function LandingPage() {
   return (
@@ -13,6 +14,7 @@ export default function LandingPage() {
           <Hero />
           <AdvertisingSpaces />
           <FeaturedPicks />
+          <NearyouPage />
         </Stack>
       </main>
 
