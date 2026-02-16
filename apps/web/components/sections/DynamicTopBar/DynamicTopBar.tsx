@@ -27,7 +27,7 @@ export const DynamicTopBar: React.FC<DynamicTopBarProps> = ({
           className="font-bold tracking-tight"
           fz={42}
           c="black"
-          style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+          style={{ fontFamily: 'var(--font-inter), sans-serif', fontWeight: 500 }}
         >
           {title}
         </Text>
