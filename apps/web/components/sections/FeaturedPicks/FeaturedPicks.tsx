@@ -7,6 +7,8 @@ import Image from 'next/image';
 // import { GlassCardSection } from '../GlassCardSection/GlassCardSection';
 import { FeaturedCarousel } from './FeaturedCarousel';
 import { FilterChip } from './FilterChip';
+import { FeaturedGroupCard } from '../FeaturedGroupCards/FeaturedGroupCard';
+import { FeaturedGroupPage } from '../FeaturedGroupCards/FeaturedGroupPage';
 
 export const FeaturedPicks = () => {
   return (
@@ -69,7 +71,9 @@ export const FeaturedPicks = () => {
           </Container>
         </div>
 
-        <div>{/* <GlassCardSection /> */}</div>
+        <div>{/* test component */}
+          <FeaturedGroupPage />
+        </div>
       </div>
     </section>
   );
