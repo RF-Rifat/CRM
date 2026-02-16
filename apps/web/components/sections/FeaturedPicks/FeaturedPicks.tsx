@@ -1,11 +1,12 @@
+'use client';
 import { Container } from '@/components/ui/Container';
 import { Typography } from '@/components/ui/Typography';
 import rocketIcon from '@/src/assets/rocket.svg';
 import { Group, Stack, Text } from '@mantine/core';
 import Image from 'next/image';
+import { GlassCardSection } from '../GlassCardSection/GlassCardSection';
 import { FeaturedCarousel } from './FeaturedCarousel';
 import { FilterChip } from './FilterChip';
-import { GlassCardSection } from '../GlassCardSection/GlassCardSection';
 
 export const FeaturedPicks = () => {
   return (

@@ -1,0 +1,12 @@
+{
+  "common": {
+    "welcome": "Bienvenue"
+  },
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "home": {
+    "title": "Ceci est la page d'accueil"
+  }
+}

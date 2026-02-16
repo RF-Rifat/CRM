@@ -1,0 +1,12 @@
+{
+  "common": {
+    "welcome": "Welcome"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About"
+  },
+  "home": {
+    "title": "This is the home page"
+  }
+}

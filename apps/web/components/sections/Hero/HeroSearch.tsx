@@ -1,10 +1,11 @@
+'use client';
 import searchIcon from '@/src/assets/Search.svg';
 import { Stack } from '@mantine/core';
 import Image from 'next/image';
 
 export const HeroSearch = () => {
   return (
-    <div className="flex w-full max-w-2xl items-center rounded-3xl border mt-5 border-gray-100 bg-[#CDC9C9]/10 py-2 pr-2 pl-8 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05)]">
+    <div className="mt-5 flex w-full max-w-2xl items-center rounded-3xl border border-gray-100 bg-[#CDC9C9]/10 py-2 pr-2 pl-8 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05)]">
       {/* Ad Space Section */}
       <div className="flex-1 cursor-pointer py-1">
         <Stack gap={0}>
@@ -37,7 +38,7 @@ export const HeroSearch = () => {
 
       {/* Search Button */}
       <button className="bg-brand ml-4 flex h-12 w-12 items-center justify-center rounded-xl p-3 shadow-[0_10px_20px_-5px_rgba(124,58,237,0.3)] transition-all hover:scale-105 active:scale-95">
-        <div className=" flex items-center justify-center">
+        <div className="flex items-center justify-center">
           <Image
             src={searchIcon}
             width={20}

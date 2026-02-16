@@ -1,3 +1,4 @@
+'use client';
 import { Container } from '@/components/ui/Container';
 import { Typography } from '@/components/ui/Typography';
 import { Grid, Stack } from '@mantine/core';
@@ -18,11 +19,10 @@ export const AdvertisingSpaces = () => {
             <Typography
               variant="h2"
               color="primary"
-              className=" text-3xl leading-tight md:text-[28px]"
+              className="text-3xl leading-tight md:text-[28px]"
             >
               Lorem ipsum dolor sit amet consectetur. Posuere enim <br />
-               egestas
-              viverra nisi. Mattis augue tincidunt nulla ut.
+              egestas viverra nisi. Mattis augue tincidunt nulla ut.
             </Typography>
           </div>
 

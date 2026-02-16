@@ -1,3 +1,4 @@
+'use client';
 import {
   Container as MantineContainer,
   ContainerProps as MantineContainerProps,

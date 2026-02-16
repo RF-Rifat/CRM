@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from 'clsx';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import { twMerge } from 'tailwind-merge';
 
 function cn(...inputs: ClassValue[]) {
@@ -14,7 +14,7 @@ const links = [
 ];
 
 export const NavLinks = () => {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <nav className="hidden items-center gap-8 md:flex">
@@ -24,7 +24,7 @@ export const NavLinks = () => {
           href={link.href}
           className={cn(
             'hover:text-brand relative py-1 text-sm font-medium transition-all duration-200',
-            router.pathname === link.href
+            pathname === link.href
               ? 'text-brand border-brand border-b-2'
               : 'text-text-secondary'
           )}

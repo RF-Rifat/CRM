@@ -1,3 +1,4 @@
+'use client';
 import mapPicture from '@/src/assets/map picture.png';
 import { Card, Image } from '@mantine/core';
 

@@ -1,3 +1,4 @@
+'use client';
 import { clsx, type ClassValue } from 'clsx';
 import React from 'react';
 import { twMerge } from 'tailwind-merge';

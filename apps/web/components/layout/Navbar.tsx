@@ -1,3 +1,4 @@
+'use client'
 import { Logo } from '@/components/shared/Logo';
 import { NavLinks } from '@/components/shared/NavLinks';
 import { Button } from '@/components/ui/Button';

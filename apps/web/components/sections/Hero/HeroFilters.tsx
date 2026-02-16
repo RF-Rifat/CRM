@@ -1,3 +1,4 @@
+'use client';
 import { Button } from '@/components/ui/Button';
 import carIcon from '@/src/assets/car.svg';
 import foodIcon from '@/src/assets/food.svg';
