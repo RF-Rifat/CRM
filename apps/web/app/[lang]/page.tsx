@@ -1,4 +1,3 @@
-import { Navbar } from '@/components/layout/Navbar';
 import { AdvertisingSpaces } from '@/components/sections/AdvertisingSpaces/AdvertisingSpaces';
 import { FeaturedPicks } from '@/components/sections/FeaturedPicks/FeaturedPicks';
 import { Hero } from '@/components/sections/Hero/Hero';
@@ -9,7 +8,6 @@ import { PopularPage } from '../../components/sections/Popular/PopularPage';
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
       <main>
         <Stack gap={0}>
           <Hero />

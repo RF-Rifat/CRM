@@ -16,6 +16,8 @@ const links = [
 export const NavLinks = () => {
   const pathname = usePathname();
 
+  if (!pathname) return null;
+
   return (
     <nav className="hidden items-center gap-8 md:flex">
       {links.map(link => (
@@ -24,7 +26,7 @@ export const NavLinks = () => {
           href={link.href}
           className={cn(
             'hover:text-brand relative py-1 text-sm font-medium transition-all duration-200',
-            pathname === link.href
+            pathname === link.href || pathname.endsWith(link.href)
               ? 'text-brand border-brand border-b-2'
               : 'text-text-secondary'
           )}

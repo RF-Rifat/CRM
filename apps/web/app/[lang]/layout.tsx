@@ -8,6 +8,7 @@ import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
 import { getDictionary } from '../../Language/getDictionaries';
 import { theme } from '../../lib/theme';
+import { Navbar } from '../../components/layout/Navbar';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -44,6 +45,7 @@ export default async function RootLayout({
         className={`${poppins.variable} ${inter.variable} font-sans antialiased`}
       >
         <MantineProvider theme={theme} defaultColorScheme="light">
+          <Navbar />
           {children}
         </MantineProvider>
       </body>
