@@ -5,6 +5,7 @@ import { Group, Stack, Text } from '@mantine/core';
 import Image from 'next/image';
 import { FeaturedCarousel } from './FeaturedCarousel';
 import { FilterChip } from './FilterChip';
+import { GlassCardSection } from '../GlassCardSection/GlassCardSection';
 
 export const FeaturedPicks = () => {
   return (
@@ -63,6 +64,10 @@ export const FeaturedPicks = () => {
               </Stack>
             </Stack>
           </Container>
+        </div>
+
+        <div>
+          <GlassCardSection />
         </div>
       </div>
     </section>
