@@ -4,7 +4,7 @@ import { Typography } from '@/components/ui/Typography';
 import rocketIcon from '@/src/assets/rocket.svg';
 import { Group, Stack, Text } from '@mantine/core';
 import Image from 'next/image';
-import { GlassCardSection } from '../GlassCardSection/GlassCardSection';
+// import { GlassCardSection } from '../GlassCardSection/GlassCardSection';
 import { FeaturedCarousel } from './FeaturedCarousel';
 import { FilterChip } from './FilterChip';
 
@@ -55,21 +55,21 @@ export const FeaturedPicks = () => {
               {/* Bottom Content section */}
               <Stack gap="xl" align="center" className="max-w-xl text-center">
                 <Text c="#666666" size="lg" className="leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur. Cursus nunc quis
-                  blandit arcu pharetra pharetra. Donec porttitor amet.
+                  Lorem ipsum dolor sit amet consectetur. Cursus <br /> nunc quis
+                  blandit arcu pharetra pharetra. Donec <br /> porttitor amet.
                 </Text>
 
-                <button className="rounded-2xl border-2 border-gray-100 bg-white px-10 py-4 font-bold text-[#6366f1] shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-all hover:scale-105 hover:shadow-xl active:scale-95">
-                  Learn More
-                </button>
+                <div className="rounded-2xl bg-gradient-to-b from-gray-300 to-transparent p-[2px] transition-all hover:scale-105 hover:shadow-xl active:scale-95">
+                  <button className="text-brand font-face-poppins font-semibold rounded-2xl bg-white px-14 py-4 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+                    Learn More
+                  </button>
+                </div>
               </Stack>
             </Stack>
           </Container>
         </div>
 
-        <div>
-          <GlassCardSection />
-        </div>
+        <div>{/* <GlassCardSection /> */}</div>
       </div>
     </section>
   );
