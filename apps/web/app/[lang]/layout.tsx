@@ -6,9 +6,9 @@ import '@mantine/dates/styles.css';
 import '@mantine/notifications/styles.css';
 import type { Metadata } from 'next';
 import { Inter, Poppins } from 'next/font/google';
+import { Navbar } from '../../components/layout/Navbar';
 import { getDictionary } from '../../Language/getDictionaries';
 import { theme } from '../../lib/theme';
-import { Navbar } from '../../components/layout/Navbar';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -31,13 +31,14 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: any;
 }) {
+  const { lang } = await params;
   // Load dictionary (important for future usage)
-  await getDictionary(params.lang);
+  await getDictionary(lang);
 
   return (
-    <html lang={params.lang}>
+    <html lang={lang}>
       <head>
         <ColorSchemeScript defaultColorScheme="light" />
       </head>
