@@ -1,6 +1,6 @@
 'use client';
 
-import cardStore from '@/src/assets/cardStore.svg';
+import pStoreIcon from '@/src/assets/p-store.svg';
 import { Container, SimpleGrid } from '@mantine/core';
 import { FeaturedGroupCard } from './FeaturedGroupCard';
 
@@ -9,32 +9,32 @@ export const FeaturedGroupPage = () => {
     {
       title: 'Lorem',
       description: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      icon: cardStore,
+      icon: pStoreIcon,
     },
     {
       title: 'Lorem',
       description: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      icon: cardStore,
+      icon: pStoreIcon,
     },
     {
       title: 'Lorem',
       description: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      icon: cardStore,
+      icon: pStoreIcon,
     },
     {
       title: 'Lorem',
       description: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      icon: cardStore,
+      icon: pStoreIcon,
     },
     {
       title: 'Lorem',
       description: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      icon: cardStore,
+      icon: pStoreIcon,
     },
     {
       title: 'Lorem',
       description: 'Lorem ipsum dolor sit ametLorem ipsum dolor sit amet',
-      icon: cardStore,
+      icon: pStoreIcon,
     },
   ];
 
