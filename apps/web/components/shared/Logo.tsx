@@ -1,5 +1,5 @@
 import { Typography } from '@/components/ui/Typography';
-import logoIcon from '@/src/assets/logo.svg';
+import logoIcon from '@/src/assets/pink-logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,7 +12,7 @@ export const Logo = () => {
       <Typography
         variant="h3"
         color="brand"
-        className="tracking-tight uppercase font-semibold"
+        className="font-semibold tracking-tight uppercase"
       >
         Empty
       </Typography>

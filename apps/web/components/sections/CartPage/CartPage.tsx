@@ -30,7 +30,7 @@ export const CartPage = () => {
         <CartTopbar />
 
         <div className="py-8">
-          <Grid gutter={40}>
+          <Grid gutter={20}>
             {/* Left Group - 50% */}
             <Grid.Col span={{ base: 12, md: 6 }}>
               <SimpleGrid cols={2} spacing="lg">
