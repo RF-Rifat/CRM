@@ -5,15 +5,14 @@ import rocketIcon from '@/src/assets/rocket.svg';
 import { Group, Stack, Text } from '@mantine/core';
 import Image from 'next/image';
 // import { GlassCardSection } from '../GlassCardSection/GlassCardSection';
+import { FeaturedGroupPage } from '../FeaturedGroupCards/FeaturedGroupPage';
 import { FeaturedCarousel } from './FeaturedCarousel';
 import { FilterChip } from './FilterChip';
-import { FeaturedGroupCard } from '../FeaturedGroupCards/FeaturedGroupCard';
-import { FeaturedGroupPage } from '../FeaturedGroupCards/FeaturedGroupPage';
 
 export const FeaturedPicks = () => {
   return (
     <section className="px-6 py-10">
-      <div className="relative mx-auto max-w-[1440px] rounded-[3.5rem] bg-violet-50 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.08)]">
+      <div className="bg-violet-50 relative mx-auto max-w-[1440px] rounded-[3.5rem] shadow-[0_40px_100px_-20px_rgba(0,0,0,0.08)]">
         <div className="relative pb-24">
           <Container>
             <Stack gap={60} align="center" pt={80}>
@@ -57,12 +56,13 @@ export const FeaturedPicks = () => {
               {/* Bottom Content section */}
               <Stack gap="xl" align="center" className="max-w-xl text-center">
                 <Text c="#666666" size="lg" className="leading-relaxed">
-                  Lorem ipsum dolor sit amet consectetur. Cursus <br /> nunc quis
-                  blandit arcu pharetra pharetra. Donec <br /> porttitor amet.
+                  Lorem ipsum dolor sit amet consectetur. Cursus <br /> nunc
+                  quis blandit arcu pharetra pharetra. Donec <br /> porttitor
+                  amet.
                 </Text>
 
                 <div className="rounded-2xl bg-gradient-to-b from-gray-300 to-transparent p-[2px] transition-all hover:scale-105 hover:shadow-xl active:scale-95">
-                  <button className="text-brand font-face-poppins font-semibold rounded-2xl bg-white px-14 py-4 shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
+                  <button className="text-brand font-face-poppins rounded-2xl bg-white px-14 py-4 font-semibold shadow-[0_4px_20px_rgba(0,0,0,0.05)]">
                     Learn More
                   </button>
                 </div>
@@ -71,7 +71,8 @@ export const FeaturedPicks = () => {
           </Container>
         </div>
 
-        <div>{/* test component */}
+        <div>
+          {/* test component */}
           <FeaturedGroupPage />
         </div>
       </div>

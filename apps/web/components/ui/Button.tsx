@@ -26,7 +26,7 @@ const _Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(
         )}
         style={{
           background:
-            'linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%), var(--mantine-color-violet-6)',
+            'linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%), var(--color-brand)',
           boxShadow:
             '0 20px 40px -10px rgba(124, 58, 237, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.1)',
           ...props.style,
