@@ -57,19 +57,20 @@ export const HeroFilters = ({
                       }
                 }
               >
-                <div className="flex items-center gap-2">
+                <span className="flex items-center gap-2">
                   {item.icon && (
-                    <div className="relative h-6 w-6 transition-transform group-hover:scale-110">
+                    <span className="relative h-6 w-6 transition-transform group-hover:scale-110">
                       <Image
                         src={item.icon}
                         alt={item.label}
                         fill
+                        sizes="24px"
                         className={cn(
                           'object-contain',
                           isActive ? 'brightness-0 invert' : ''
                         )}
                       />
-                    </div>
+                    </span>
                   )}
                   <span
                     className={cn(
@@ -79,7 +80,7 @@ export const HeroFilters = ({
                   >
                     {item.label}
                   </span>
-                </div>
+                </span>
               </Button>
             );
           })}

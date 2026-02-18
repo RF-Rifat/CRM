@@ -44,14 +44,14 @@ export const HeroSearch = ({ activeFilter }: HeroSearchProps) => {
 
       {/* Search Button */}
       <button className="bg-brand ml-4 flex h-12 w-12 items-center justify-center rounded-xl p-3 shadow-[0_10px_20px_-5px_rgba(124,58,237,0.3)] transition-all hover:scale-105 active:scale-95">
-        <div className="flex items-center justify-center">
+        <span className="flex items-center justify-center">
           <Image
             src={searchIcon}
             width={20}
             alt="Search"
             className="object-contain brightness-0 invert"
           />
-        </div>
+        </span>
       </button>
     </div>
   );
