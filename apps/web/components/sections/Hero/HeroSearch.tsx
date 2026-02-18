@@ -3,14 +3,20 @@ import searchIcon from '@/src/assets/Search.svg';
 import { Stack } from '@mantine/core';
 import Image from 'next/image';
 
-export const HeroSearch = () => {
+interface HeroSearchProps {
+  activeFilter: string;
+}
+
+export const HeroSearch = ({ activeFilter }: HeroSearchProps) => {
   return (
     <div className="mt-5 flex w-full max-w-2xl items-center rounded-3xl border border-gray-100 bg-[#CDC9C9]/10 py-2 pr-2 pl-8 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05)]">
       {/* Ad Space Section */}
       <div className="flex-1 cursor-pointer py-1">
         <Stack gap={0}>
           <span className="text-xs font-medium text-gray-400">Ad Space</span>
-          <span className="text-md font-bold text-[#444444]">StoreFront</span>
+          <span className="text-md font-bold text-[#444444]">
+            {activeFilter}
+          </span>
         </Stack>
       </div>
 
