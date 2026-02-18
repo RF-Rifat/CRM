@@ -1,3 +1,4 @@
+'use client';
 import { Stack, Text } from '@mantine/core';
 import { IconArrowUp } from '@tabler/icons-react';
 

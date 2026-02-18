@@ -38,7 +38,7 @@ export default async function RootLayout({
   await getDictionary(lang);
 
   return (
-    <html lang={lang}>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         <ColorSchemeScript defaultColorScheme="light" />
       </head>

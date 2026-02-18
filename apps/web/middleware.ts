@@ -21,10 +21,16 @@ function getLocale(request: NextRequest) {
   });
 
   const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-  return match(languages, locales, defaultLocale);
+
+  try {
+    return match(languages, locales, defaultLocale);
+  } catch (error) {
+    console.warn('Locale matching failed, falling back to default:', error);
+    return defaultLocale;
+  }
 }
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Skip if already has locale

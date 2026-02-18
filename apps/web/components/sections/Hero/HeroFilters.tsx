@@ -23,7 +23,7 @@ export const HeroFilters = ({
   ];
 
   return (
-    <Stack gap="" className="w-fit">
+    <Stack className="w-fit">
       <div className="flex w-fit items-center rounded-2xl border-2 border-gray-100 bg-white p-1 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.05)]">
         <Group gap={4} wrap="nowrap">
           {filterItems.map(item => {

@@ -1,3 +1,4 @@
+'use client';
 import { Box, Group, Stack, Text } from '@mantine/core';
 import NextImage, { StaticImageData } from 'next/image';
 import React from 'react';
@@ -81,12 +82,7 @@ export const NearyouPageCard: React.FC<NearyouPageCardProps> = ({
           <Text size="20px" fw={500} c="black">
             ${price}/
           </Text>
-          <Text
-            size="14px"
-            fw={500}
-            c="#9CA3AF"
-            className="tracking-tighter"
-          >
+          <Text size="14px" fw={500} c="#9CA3AF" className="tracking-tighter">
             Month
           </Text>
         </Group>
