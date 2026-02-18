@@ -2,7 +2,7 @@
 import { Button } from '@/components/ui/Button';
 import carIcon from '@/src/assets/car.svg';
 import foodIcon from '@/src/assets/food.svg';
-import storeIcon from '@/src/assets/store.svg';
+import pStoreIcon from '@/src/assets/p-store.svg';
 import { Group, Stack } from '@mantine/core';
 import Image from 'next/image';
 
@@ -18,7 +18,7 @@ export const HeroFilters = ({
   const filterItems = [
     { label: 'All', icon: null },
     { label: 'Rideshare', icon: carIcon },
-    { label: 'StoreFront', icon: storeIcon },
+    { label: 'StoreFront', icon: pStoreIcon },
     { label: 'Food Cart', icon: foodIcon },
   ];
 

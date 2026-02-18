@@ -8,18 +8,18 @@ import { CartTopbar } from './CartTopbar';
 
 // Asset imports for dummy data
 import arrowDown from '@/src/assets/arrowDown.svg';
-import like from '@/src/assets/like.svg';
-import locationIcon from '@/src/assets/locationIcon.svg';
 import mapImg from '@/src/assets/map.png';
 import near1 from '@/src/assets/near1.png';
+import pLike from '@/src/assets/p-like.svg';
+import pLocationIcon from '@/src/assets/p-locationIcon.svg';
 
 const DUMMY_CARDS = Array(4).fill({
   image: near1,
   title: 'Street-Facing Storefront Window',
   location: 'Downtown area',
-  locationIcon: locationIcon,
+  locationIcon: pLocationIcon,
   meta: '45k / mo',
-  metaIcon: like,
+  metaIcon: pLike,
   price: '1,500',
 });
 
@@ -61,7 +61,7 @@ export const CartPage = () => {
                   className="absolute top-4 right-4 overflow-hidden rounded-full bg-white shadow-md transition-transform hover:scale-105"
                   style={{ zIndex: 10, cursor: 'pointer' }}
                 >
-                  <Box className="flex items-center  px-3 py-2">
+                  <Box className="flex items-center px-3 py-2">
                     <span
                       style={{
                         color: '#111827',

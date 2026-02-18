@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/Button';
 import { Typography } from '@/components/ui/Typography';
-import locationIcon from '@/src/assets/locationIcon.svg';
+import pLocationIcon from '@/src/assets/p-locationIcon.svg';
 import redBuildingImg from '@/src/assets/redBuilding.png';
 import { Group, Stack, Text } from '@mantine/core';
 import Image from 'next/image';
@@ -37,12 +37,12 @@ export const PickCard = () => {
 
               <Group gap={4}>
                 <Image
-                  src={locationIcon}
+                  src={pLocationIcon}
                   alt="location"
                   width={16}
                   height={16}
                 />
-                <Text size="xs" c="#7c3aed" fw={600}>
+                <Text size="xs" c="brand" fw={600}>
                   5th Ave & 23rd St, Flatiron District
                 </Text>
               </Group>
@@ -82,7 +82,7 @@ export const PickCard = () => {
 
           <div className="mt-4 flex items-center justify-between">
             <Group gap={4} align="baseline">
-              <Text fw={700} className="text-2xl" c="#7c3aed">
+              <Text fw={700} className="text-2xl" c="brand">
                 $4800.00
               </Text>
               <Text size="xs" c="#888888">

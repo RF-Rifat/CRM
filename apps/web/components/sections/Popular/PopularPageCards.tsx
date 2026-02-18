@@ -4,17 +4,17 @@ import { SimpleGrid } from '@mantine/core';
 import { NearyouPageCard } from '../NearyouPage/NearyouPageCard';
 
 // Asset imports
-import like from '@/src/assets/like.svg';
-import locationIcon from '@/src/assets/locationIcon.svg';
 import near1 from '@/src/assets/near1.png';
+import pLike from '@/src/assets/p-like.svg';
+import pLocationIcon from '@/src/assets/p-locationIcon.svg';
 
 const DUMMY_POPULAR = Array(8).fill({
   image: near1,
   title: 'Premium City Center Office',
   location: 'Business District',
-  locationIcon: locationIcon,
+  locationIcon: pLocationIcon,
   meta: '85k / mo',
-  metaIcon: like,
+  metaIcon: pLike,
   price: '2,800',
 });
 
